@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll task</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+            * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.the_main_box {
+    width: 1761px;
+    height: 643px;
+    border: 3px solid pink;
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0 0 0;
+    overflow-x: hidden;
+}
+
+.box1 {
+    width: 537px;
+    height: 643px;
+    
+    border-radius: 28px;
+    background: linear-gradient(265.43deg, rgb(38, 58, 79),rgb(24, 32, 53) 1.15%,rgb(1, 11, 25) 21.42%,rgb(38, 58, 79) 39.24%,rgb(63, 88, 105) 51.92%,rgb(38, 58, 79) 65.54%,rgb(24, 32, 53) 79.96%,rgb(1, 11, 25) 99.31%);
+}
+
+.box1_inside {
+    width: 462px;
+    height: 575px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.fire {
+    width: 54px;
+    height: 54px;
+    border-radius: 27px;
+    position: relative;
+    left: 91%;
+    top: -5px;
+}
+
+.the_highest_section {
+    width: 453px;
+    height: 222px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flexible_solution {
+    color: white;
+    width: 453px;
+    height: 54px;
+    
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 20.97px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.high_section {
+    width: 453px;
+    height: 132px;
+    
+}
+
+.gig_min {
+    width: 190px;
+    height: 110px;
+    
+}
+
+.first_info {
+    width: 453px;
+    height: 112px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    width: 28px;
+    height: 30px;
+    
+}
+
+.arrows {
+    width: 30px;
+    height: 80px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.giga {
+    width: 108px;
+    height: 64px;
+    display: flex;
+    align-items: baseline;
+    
+    gap: 5px;
+}
+
+.mina {
+    width: 144px;
+    height: 44px;
+    display: flex;
+    align-items: baseline;
+    
+    gap: 5px;
+}
+
+.gigabites_number {
+    width: 64px;
+    height: 62px;
+    
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 55.78px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -2.4px;
+}
+
+.minutes_number {
+    width: 92px;
+    height: 42px;
+    
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: -2.4px;
+}
+
+.gb {
+    width:26px;
+    height: 19px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    
+}
+
+.min {
+    width: 42px;
+    height: 20px;
+    
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Arial;
+    font-size: 16.88px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.limitless_messanger {
+    width: 228px;
+    height: 18px;
+    
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 13.02px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.last_section {
+    width: 457px;
+    height: 212px;
+    
+}
+
+footer {
+    width: 457px;
+    height: 100px;
+    
+    display: flex;
+}
+
+.footer_first {
+    width: 50%;
+    height: 98px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.footer_second {
+    width: 50%;
+    height: 98px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    width: 60px;
+    height: 37px;
+    
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.currency {
+    width: 50px;
+    height: 20px;
+    
+    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial;
+    font-size: 13.78px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+button {
+    width: 193px;
+    height: 48px;
+    
+    box-sizing: border-box;
+    border: 1px solid rgba(80, 80, 80, 0.3);
+    border-radius: 12px;
+    background: rgb(254, 211, 5);
+}
+    </style>
+</head>
+<body>
+    <!-- Your existing HTML content -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper the_main_box">
+            <div class="swiper-slide box1">
+                <img class="fire" src="img/amir.svg" alt="">
+                <div class="box1_inside">
+                    <div class="the_highest_section">
+                        <div class="flexible_solution">Гибкое решение за 650</div>
+                        <div class="high_section">
+                            <div class="first_info">
+                                <div class="gig_min">
+                                    <div class="giga">
+                                        <div class="gigabites_number">35</div><div class="gb">ГБ</div>
+                                    </div> 
+                                    <div class="mina">
+                                        <div class="minutes_number">1000</div><div class="min">МИН</div>
+                                    </div>
+                                </div>
+                                <div class="arrows">
+                                    <img class="arrow" src="img/Button_top.svg" alt="">
+                                    <img class="arrow" src="img/Button_bottom.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="limitless_messanger">безлимит на мессенджеры</div>
+                        </div>     
+                    </div>
+                    <img class="last_section" src="img/present.png" alt="">
+                    <footer>
+                        <div class="footer_first">
+                            <div class="price">650</div>
+                            <div class="currency">$/мес</div>
+                        </div>
+                        <div class="footer_second">
+                            <button>Подключить</button>
+                        </div>
+                    </footer>   
+                </div>   
+            </div>
+            <div class="swiper-slide box1">
+                <img class="fire" src="img/amir.svg" alt="">
+            <div class="box1_inside">
+                <div class="the_highest_section">
+                    <div class="flexible_solution">Гибкое решение за 800</div>
+                    <div class="high_section">
+                        <div class="first_info">
+                            <div class="gig_min">
+                                <div class="giga">
+                                    <div class="gigabites_number">45</div><div class="gb">ГБ</div>
+                                </div> 
+                                <div class="mina">
+                                    <div class="minutes_number">1200</div><div class="min">МИН</div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <img class="arrow" src="img/Button_top.svg" alt="">
+                                <img class="arrow" src="img/Button_bottom.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="limitless_messanger">безлимит на мессенджеры</div>
+                    </div>   
+                </div>
+                <img class="last_section" src="img/present.png" alt="">
+                <footer>
+                    <div class="footer_first">
+                        <div class="price">800</div>
+                        <div class="currency">$/мес</div>
+                    </div>
+                    <div class="footer_second">
+                        <button>Подключить</button>
+                    </div>
+                </footer>   
+            </div>
+            </div>
+            <div class="swiper-slide box1">
+                <img class="fire" src="img/amir.svg" alt="">
+            <div class="box1_inside">
+                <div class="the_highest_section">
+                    <div class="flexible_solution">Гибкое решение за 950</div>
+                    <div class="high_section">
+                        <div class="first_info">
+                            <div class="gig_min">
+                                <div class="giga">
+                                    <div class="gigabites_number">60</div><div class="gb">ГБ</div>
+                                </div> 
+                                <div class="mina">
+                                    <div class="minutes_number">2000</div><div class="min">МИН</div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <img class="arrow" src="img/Button_top.svg" alt="">
+                                <img class="arrow" src="img/Button_bottom.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="limitless_messanger">безлимит на мессенджеры</div>
+                    </div>      
+                </div>
+                <img class="last_section" src="img/present.png" alt="">
+                <footer>
+                    <div class="footer_first">
+                        <div class="price">950</div>
+                        <div class="currency">$/мес</div>
+                    </div>
+                    <div class="footer_second">
+                        <button>Подключить</button>
+                    </div>
+                </footer>
+            </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let body = document.body
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 60,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
